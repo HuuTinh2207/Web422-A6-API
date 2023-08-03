@@ -12,8 +12,8 @@ const passportJWT = require("passport-jwt");
 const HTTP_PORT = process.env.PORT || 8080;
 
 //Setting up JWT strategy
-let ExtractJWT = passportJWT.ExtractJwt;
-let JWTStrategy = passportJWT.Strategy;
+let ExtractJwt = passportJWT.ExtractJwt;
+let JwtStrategy = passportJWT.Strategy;
 
 let jwtOptions = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
